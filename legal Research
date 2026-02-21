@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Shafi | High Court of Orissa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest-green: #1B3022;
+            --slate-grey: #708090;
+            --off-white: #F5F5F5;
+            --gold-accent: #C5A059;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--off-white);
+            color: var(--forest-green);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--forest-green);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(27, 48, 34, 0.8), rgba(27, 48, 34, 0.8)), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 10%;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: var(--slate-grey); max-width: 700px; }
+
+        /* Experience & Expertise */
+        .container { padding: 80px 10%; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-left: 5px solid var(--forest-green);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card h3 { color: var(--forest-green); margin-top: 0; }
+
+        /* Footer */
+        footer {
+            background-color: var(--forest-green);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .btn {
+            background-color: var(--gold-accent);
+            color: var(--forest-green);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="color: white; font-family: 'Playfair Display'; font-size: 1.5rem;">ADVOCATE SHAFI</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Precision in Jurisprudence</h1>
+        <p>Legal Research Assistant at the High Court of Orissa. Dedicated to the rigorous analysis of Indian Criminal Law and Constitutional matters.</p>
+        <a href="https://linkedin.com" class="btn">LINKEDIN PROFILE</a>
+    </section>
+
+    <div class="container" id="about">
+        <h2 style="text-align: center; font-size: 2.5rem;">Professional Profile</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            Bridging the gap between exhaustive legal theory and judicial application. Based in Cuttack, I provide specialized research support to the Hon'ble Bench, ensuring every citation and brief meets the highest standards of the High Court.
+        </p>
+
+        <div class="grid" id="expertise">
+            <div class="card">
+                <h3>Criminal Law</h3>
+                <p>Expertise in IPC, CrPC, and the transition to the Bharatiya Nyaya Sanhita (BNS). Focus on precedent tracking and procedural nuances.</p>
+            </div>
+            <div class="card">
+                <h3>Judicial Research</h3>
+                <p>Proficient in SCC Online, Manupatra, and Westlaw. Skilled in identifying controlling precedents for complex litigation like <i>Mandal v. State of Odisha</i>.</p>
+            </div>
+            <div class="card">
+                <h3>Case Drafting</h3>
+                <p>Specialized in drafting Bench Memoranda, Case Summaries, and comprehensive research notes for High Court proceedings.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Advocate Shafi | High Court of Orissa</p>
+        <p style="font-size: 0.8rem; color: var(--slate-grey);">Cuttack, Odisha, India</p>
+    </footer>
+
+</body>
+</html>
